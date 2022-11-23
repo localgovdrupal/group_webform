@@ -21,7 +21,7 @@ class GroupWebformDeriver extends DeriverBase {
       $this->derivatives[$name] = clone $base_plugin_definition;
       $this->derivatives[$name]->set('entity_bundle', $name);
       $this->derivatives[$name]->set('label', t('Group webform (@label)', ['@label' => $label]));
-      $this->derivatives[$name]->set('description', t('Adds %label webform to groups.', ['%webform' => $label]));
+      $this->derivatives[$name]->set('description', t('Adds %label webform to groups.', ['%label' => $label]));
     }
 
     return $this->derivatives;
