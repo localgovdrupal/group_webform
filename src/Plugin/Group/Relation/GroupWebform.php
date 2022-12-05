@@ -51,7 +51,7 @@ class GroupWebform extends GroupRelationBase {
    */
   public function calculateDependencies() {
     $dependencies = parent::calculateDependencies();
-    $dependencies['config'][] = 'webform.type.' . $this->getRelationType()->getEntityBundle();
+    $dependencies['config'][] = 'webform.webform.' . $this->getRelationType()->getEntityBundle();
     return $dependencies;
   }
 
