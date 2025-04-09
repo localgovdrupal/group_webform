@@ -16,7 +16,7 @@ class GroupWebformConfigTest extends EntityKernelTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'entity',
     'flexible_permissions',
     'group_webform',
@@ -30,7 +30,7 @@ class GroupWebformConfigTest extends EntityKernelTestBase {
   /**
    * Tests that the module's config installs properly.
    */
-  public function testConfig() {
+  public function testConfig(): void {
     $this->installConfig(['group_webform']);
   }
 

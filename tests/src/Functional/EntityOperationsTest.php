@@ -16,12 +16,12 @@ class EntityOperationsTest extends GroupEntityOperationsTest {
   /**
    * {@inheritdoc}
    */
-  public static $modules = ['group_webform'];
+  protected static $modules = ['group_webform'];
 
   /**
    * {@inheritdoc}
    */
-  public function provideEntityOperationScenarios() {
+  public function provideEntityOperationScenarios(): array {
     $scenarios['withoutAccess'] = [
       [],
       ['group/1/nodes' => 'Nodes'],
