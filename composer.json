@@ -6,7 +6,8 @@
   "license": "GPL-2.0-or-later",
   "minimum-stability": "dev",
   "require": {
-      "drupal/webform": "^6.2@beta",
+      "drupal/webform": "^6.3@beta",
       "drupal/group": "^3.2"
   }
 }
+
